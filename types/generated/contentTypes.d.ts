@@ -824,6 +824,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     singularName: 'project';
     pluralName: 'projects';
     displayName: 'Project';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -832,6 +833,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     Title: Attribute.String;
     Detail: Attribute.String;
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Project_link: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
